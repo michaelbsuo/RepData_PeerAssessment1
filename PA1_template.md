@@ -58,7 +58,7 @@ with(Mean_Steps_Interval, plot(steps ~ interval, type = "l"))
 ![plot of chunk average daily activity pattern](figure/average daily activity pattern-1.png) 
 
 ```r
-# 5 min interval with max steps
+# Which 5 min interval with max steps
 Max_Row <- which.max(Mean_Steps_Interval$steps)
 Mean_Steps_Interval$interval[Max_Row]
 ```

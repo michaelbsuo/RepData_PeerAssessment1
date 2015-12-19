@@ -34,7 +34,7 @@ median(Total_Steps$steps)
 # Daily average steps to 5 min interval
 Mean_Steps_Interval <- aggregate(steps ~ interval, Dataset, mean, na.rm = TRUE)
 with(Mean_Steps_Interval, plot(steps ~ interval, type = "l"))
-# 5 min interval with max steps
+# Which 5 min interval with max steps
 Max_Row <- which.max(Mean_Steps_Interval$steps)
 Mean_Steps_Interval$interval[Max_Row]
 ```
